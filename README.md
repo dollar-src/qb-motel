@@ -6,6 +6,9 @@
 
 # Dependencies
 
+**[qb-core](https://github.com/qbcore-framework/qb-core)**
+
+
 **[qb-clothing](https://github.com/qbcore-framework/qb-clothing)** **OR** **[fivem-appearance](https://github.com/https://github.com/IdrisDose/aj-fivem-appearance)(QBCORE)** 
 
 **[drawtext](https://github.com/dollar-src/drawtext)**
