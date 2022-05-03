@@ -1,1 +1,1 @@
-# qb-motel
+# qb-motel.
