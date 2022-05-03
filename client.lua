@@ -96,15 +96,15 @@ Citizen.CreateThread(function()
                 if doordistance <= 2.0 then
                     if pinkcage[j].locked and currentmotel == j then 
                         closestroom = j
-                        exports['ai-drawtext']:showUI("[Oda: "..j.."] - [E] - Kilitli")
+                        exports['drawtext']:showUI("[Oda: "..j.."] - [E] - Kilitli")
                     elseif not pinkcage[j].locked and currentmotel == j then 
-                        exports['ai-drawtext']:showUI("[Oda: "..j.."] - [E] - Açık")
+                        exports['drawtext']:showUI("[Oda: "..j.."] - [E] - Açık")
 
                     elseif pinkcage[j].locked and currentmotel ~= j then
-                        exports['ai-drawtext']:showUI("[Oda: "..j.."] - Kilitli")
+                        exports['drawtext']:showUI("[Oda: "..j.."] - Kilitli")
 
                     elseif not pinkcage[j].locked and currentmotel ~= j then
-                        exports['ai-drawtext']:showUI("[Oda: "..j.."] - Açık")
+                        exports['drawtext']:showUI("[Oda: "..j.."] - Açık")
                     end
                     if (doordistance <= 1.5 and currentmotel == j) then
                         if IsControlJustReleased(0, 38) then
@@ -115,7 +115,7 @@ Citizen.CreateThread(function()
                     end
                     if (doordistance <= 1.5) then
                     else
-                        exports['ai-drawtext']:hideUI('hide')
+                        exports['drawtext']:hideUI('hide')
 
                     end
 
@@ -148,7 +148,7 @@ Citizen.CreateThread(function()
                 end
 
                     if stashdistance <= 1.5 then
-                        exports['ai-drawtext']:showUI('[E] - Sandık')
+                        exports['drawtext']:showUI('[E] - Sandık')
 
                         
                         if IsControlJustReleased(0, 38) then
@@ -157,7 +157,7 @@ Citizen.CreateThread(function()
                     end
             
                     if clothedistance <= 1.5 then
-                        exports['ai-drawtext']:showUI('[E] - Gardrop')
+                        exports['drawtext']:showUI('[E] - Gardrop')
 
                         if IsControlJustReleased(0, 38) then
                             OpenMotelWardrobe()
