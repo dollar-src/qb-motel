@@ -83,15 +83,15 @@ Citizen.CreateThread(function()
                 if doordistance <= 2.0 then
                     if pinkcage[j].locked and currentmotel == j then 
                         closestroom = j
-                        exports['ai-drawtext']:showUI("[Room: "..j.."] - [E] - Locked")
+                        exports['drawtext']:showUI("[Room: "..j.."] - [E] - Locked")
                     elseif not pinkcage[j].locked and currentmotel == j then 
-                        exports['ai-drawtext']:showUI("[Room: "..j.."] - [E] - Unlocked")
+                        exports['drawtext']:showUI("[Room: "..j.."] - [E] - Unlocked")
 
                     elseif pinkcage[j].locked and currentmotel ~= j then
-                        exports['ai-drawtext']:showUI("[Room: "..j.."] - Closed")
+                        exports['drawtext']:showUI("[Room: "..j.."] - Closed")
 
                     elseif not pinkcage[j].locked and currentmotel ~= j then
-                        exports['ai-drawtext']:showUI("[Room: "..j.."] - Open")
+                        exports['drawtext']:showUI("[Room: "..j.."] - Open")
                     end
                     if (doordistance <= 1.5 and currentmotel == j) then
                         if IsControlJustReleased(0, 38) then
@@ -102,7 +102,7 @@ Citizen.CreateThread(function()
                     end
                     if (doordistance <= 1.5) then
                     else
-                        exports['ai-drawtext']:hideUI('hide')
+                        exports['drawtext']:hideUI('hide')
 
                     end
 
@@ -135,7 +135,7 @@ Citizen.CreateThread(function()
                 end
 
                     if stashdistance <= 1.5 then
-                        exports['ai-drawtext']:showUI('[E] - Stash')
+                        exports['drawtext']:showUI('[E] - Stash')
 
                         
                         if IsControlJustReleased(0, 38) then
@@ -144,7 +144,7 @@ Citizen.CreateThread(function()
                     end
                 
                     if clothedistance <= 1.5 then
-                        exports['ai-drawtext']:showUI('[E] - Outfits')
+                        exports['drawtext']:showUI('[E] - Outfits')
 
                         if IsControlJustReleased(0, 38) then
                             OpenMotelWardrobe()
