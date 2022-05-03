@@ -2,7 +2,13 @@
 
 | If you are intested in recieving github updates join the community on **[Discord](https://discord.gg/source)**! |
 
+
+
+**[PREVIEW](https://www.youtube.com/watch?v=FfwiUb45Hp0)**
+
+
 **[Inspiration](https://github.com/morpheause/m3_motel)**
+
 
 # Dependencies
 
