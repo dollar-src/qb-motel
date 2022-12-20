@@ -187,6 +187,7 @@ function loadAnimDict(dict)
 end
 
 function OpenMotelWardrobe()
+    print('test')
     TriggerEvent('qb-clothing:client:openOutfitMenu')
 end
 
