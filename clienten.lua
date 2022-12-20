@@ -178,7 +178,7 @@ function OpenMotelWardrobe()
 end
 
 function OpenMotelInventory()
-    
+    print('hello')
     TriggerServerEvent("inventory:server:OpenInventory", "stash", ""..QBCore.Functions.GetPlayerData().citizenid)
     TriggerEvent("inventory:client:SetCurrentStash", ""..QBCore.Functions.GetPlayerData().citizenid)
     
